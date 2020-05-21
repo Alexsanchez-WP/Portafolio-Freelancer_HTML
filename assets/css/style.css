@@ -1,3 +1,11 @@
+:root {
+	--backgroundBody: #014E56;
+	--blanco: #ffffff;
+	--negro: #000000;
+	--azulClaro: #79C8C7;
+	--AzulOscuro: #2C6269;
+}
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
@@ -15,4 +23,13 @@ li,
 a {
 	list-style: none;
 	text-decoration: none;
+}
+
+/* temporal */
+ul li .icon-perfil {
+	width: 3rem;
+}
+
+body {
+	background-color: var(--AzulOscuro);
 }
