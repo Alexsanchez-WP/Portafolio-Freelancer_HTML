@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta http-equiv="X-UA-Compatible" content="IE=7">
 	<title>Alexander-WP</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,33 +15,50 @@
 <body>
 	<!-- header  -->
 	<header>
-		<section>
-			<a href="">Alexander <span>_</span>WP</a>
-			<!-- navegacion  -->
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="portafolio.html">Portafolio</a></li>
-					<li><a href="perfil.html">Perfil</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</section>
-		informacion
-		<section>
-			<h1>Encuentra todo lo que necesitas para tu <br>
-				<span>Desarrollo Web</span></h1>
-			<p> Donec vitae aliquam neque. Nulla facilisi. Proin et nisl quis sem egestas ornare. Nulla vitae risus
-				dignissim,
-				laoreet nibh in, pretium libero</p>
-		</section>
+		<div class="homepage-hero-module">
+			<div class="video-container">
+				<div class="filter"></div>
+				<video autoplay loop muted playsinline src="assets/video/Aloha-Mundo.mp4" class="fillWidth"></video>
+				<div class="poster hidden">
+					<img src="assets/video/" alt="">
+				</div>
+			</div>
+		</div>
+		<div>
+			<section class="section-nav">
+				<div class="header-nav flex">
+					<a class="c-oscuro toggle blinks" href="index.html">Alexander WP</a>
+					<!-- navegacion  -->
+					<nav class="nav">
+						<ul class="flex">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="portafolio.html">Portafolio</a></li>
+							<li><a href="perfil.html">Perfil</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			<!-- informacion  -->
+			<section class="header-center">
+				<div class="contenedor-header">
+					<h1>Encuentra todo lo que necesitas para tu <span>Desarrollo Web</span></h1>
+					<p> Donec vitae aliquam neque. Nulla facilisi. Proin et nisl quis sem egestas ornare. Nulla vitae
+						risus
+						dignissim,
+						laoreet nibh in, pretium libero</p>
+				</div>
+			</section>
 		</div>
 	</header>
 	<!-- atributos del perfil  -->
-	<main>
-		<div>
-			<h2>Soluciones innovadoras</h2>
+	<main class="contenedor">
+		<h2 class="text-center">Soluciones innovadoras</h2>
+		<div class="flex"">
+		<div class=" soluciones">
+
+			<img src="assets/img/joseph-pearson-827XUhVSp8M-unsplash.png" alt="iamgen de prefil">
 			<p>Cras interdum tellus nisl, quis auctor libero volutpat a. Donec ac ante nunc. Curabitur ultricies a enim
 				non blandit.
 				Proin euismod blandit ultrices. Morbi tincidunt, mi sit amet gravida lobortis, urna erat maximus ex, id
@@ -71,6 +89,7 @@
 						mauris vel ex. Curabitur viverra blandit semper.</p>
 				</li>
 			</ul>
+		</div>
 		</div>
 	</main>
 	<!-- algunos trabajos  -->
@@ -187,6 +206,8 @@
 			</p>
 		</div>
 	</footer>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/coverr.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 

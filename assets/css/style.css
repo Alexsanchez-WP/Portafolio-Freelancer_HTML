@@ -4,10 +4,13 @@
 	--negro: #000000;
 	--azulClaro: #79C8C7;
 	--AzulOscuro: #2C6269;
+	--grisNav: rgba(51, 51, 51, 1);
 }
 
 html {
 	box-sizing: border-box;
+	font-family: 'Raleway',
+		sans-serif;
 	font-size: 62.5%;
 	/* Now 10px = 1rem! */
 }
@@ -23,13 +26,250 @@ li,
 a {
 	list-style: none;
 	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 
-/* temporal */
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 4.6rem;
+}
+
+h2 {
+	font-size: 3.4rem;
+}
+
+/* iconos */
 ul li .icon-perfil {
 	width: 3rem;
 }
 
 body {
 	background-color: var(--AzulOscuro);
+	width: 100%;
+}
+
+/* Utiliades  */
+.contenedor {
+	max-width: 120rem;
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+.text-center {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.c-oscuro {
+	color: var(--AzulOscuro);
+}
+
+.c-claro {
+	color: var(--azulClaro);
+}
+
+
+/* header  */
+.section-nav {
+	background-color: var(--grisNav);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.header-nav {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+
+}
+
+.header-nav a {
+	font-weight: 900;
+	font-size: 4rem;
+
+}
+
+.header-nav .blinks::after {
+	content: "\2015";
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	color: var(--azulClaro);
+
+}
+
+.header-nav .toggle::before {
+	content: "\24B6";
+	display: inline-block;
+	transform: rotate(30deg);
+}
+
+.nav ul li {
+	padding: 2rem;
+}
+
+.nav li a {
+	color: var(--blanco);
+	font-weight: 700;
+	font-size: 1.8rem;
+}
+
+.nav li a:hover {
+	color: var(--azulClaro);
+}
+
+/* Centro de header  */
+
+.header-center {
+	position: absolute;
+	top: 20rem;
+	z-index: 200;
+	left: 10%;
+	right: 30%;
+}
+
+.contenedor-header h1 {
+	font-weight: 900;
+	color: var(--blanco);
+}
+
+.contenedor-header h1 span {
+	color: var(--AzulOscuro);
+}
+
+.contenedor-header p {
+	color: var(--blanco);
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+/* atributos del perfil */
+
+main h2 {
+	color: var(--blanco);
+	text-transform: uppercase;
+}
+
+.soluciones img {
+	width: 20rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* coverr  */
+.homepage-hero-module {
+	border-right: none;
+	border-left: none;
+	position: relative;
+	height: auto !important;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+	display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+	display: block !important;
+}
+
+.video-container {
+	position: relative;
+	bottom: 0%;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+}
+
+.video-container .poster img {
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+}
+
+.video-container .filter {
+	z-index: -100;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+}
+
+.video-container video {
+	position: relative;
+	z-index: 0;
+	bottom: 0;
+}
+
+.video-container video.fillWidth {
+	width: 100%;
 }
