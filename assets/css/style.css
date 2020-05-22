@@ -3,9 +3,11 @@
 	--blanco: #ffffff;
 	--negro: #000000;
 	--azulClaro: #79C8C7;
-	--AzulOscuro: #2C6269;
+	--AzulOscuro: #32828C;
 	--grisNav: rgba(51, 51, 51, 1);
 }
+
+/* color:#2C6269; */
 
 html {
 	box-sizing: border-box;
@@ -42,10 +44,15 @@ h2 {
 	font-size: 3.4rem;
 }
 
-/* iconos */
-ul li .icon-perfil {
-	width: 3rem;
+h3 {
+	font-size: 2.2rem;
 }
+
+h4 {
+	font-size: 1.6rem;
+}
+
+/* iconos */
 
 body {
 	background-color: var(--AzulOscuro);
@@ -69,6 +76,10 @@ body {
 	align-items: center;
 	justify-content: space-between;
 
+}
+
+.grid {
+	display: grid;
 }
 
 .c-oscuro {
@@ -161,12 +172,54 @@ body {
 main h2 {
 	color: var(--blanco);
 	text-transform: uppercase;
+	margin: 2rem 0;
+}
+
+main.contenedor {
+	margin: 5rem auto;
+}
+
+.soluciones {
+	flex: 0 0 calc(40%);
 }
 
 .soluciones img {
 	width: 20rem;
+	margin: 0 auto;
+}
+
+.soluciones p {
+	color: var(--blanco);
+	font-size: 1.6rem;
 
 }
+
+.content-atributos {
+	flex: 0 0 calc(60% - 4rem);
+
+}
+
+.atributos {
+	color: var(--blanco);
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+.atributos i {
+	flex: 0 0 calc(20%);
+	font-size: 6rem;
+	transition: color .5s;
+}
+
+.atributos i:hover {
+	color: var(--azulClaro);
+}
+
+.atributos p {
+	flex: 0 0 calc(80%);
+
+}
+
 
 
 
@@ -224,6 +277,16 @@ main h2 {
 
 
 /* coverr  */
+.homepage-hero-module::after {
+	content: '';
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
 .homepage-hero-module {
 	border-right: none;
 	border-left: none;
