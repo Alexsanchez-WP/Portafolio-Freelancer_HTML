@@ -9,8 +9,13 @@
 	<title>Alexander-WP</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
 	<link href="/assets/css/icon/fontawesome/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	
+	
 </head>
 
 <body>
@@ -57,7 +62,7 @@
 		</div>
 	</header>
 	<!-- atributos del perfil  -->
-	<main class="contenedor">
+	<main class="contenedor perfil">
 		<h2 class="text-center">Soluciones innovadoras</h2>
 		<div class="flex">
 			<div class="soluciones">
@@ -103,51 +108,89 @@
 		</div>
 	</main>
 	<!-- algunos trabajos  -->
-	<section>
-		<div>
-			<a href="#">
+	<div class="trabajos-section">
+		<h2 class="text-center c-letra">Conoce algunos proyectos </h2>
+		<section class="section-trabajos contenedor">
+			<div class="trabajos">
 				<img src="assets/img/images/01.jpg" alt="Imagen portafilio 01">
-			</a>
-			<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing
-				ornare
-				amet.</p>
-			<button>Ver este proyecto</button>
-			<button>Ir al portafolio</button>
-		</div>
-		<div>
-			<a href="#">
+				<div class="trabajo-contenido">
+					<p>Plantilla Wordpress para Portafolio Freelancer A_WP</p>
+					<ul class="trabajos-icon">
+						<li><i class="fab fa-wordpress"></i>WordPress</li>
+						<li><i class="fab fa-js-square"></i>JavaScript</li>
+						<li><i class="fab fa-html5"></i>HTML5</li>
+						<li><i class="fab fa-css3-alt"></i>CSS3</li>
+					</ul>
+					<div>
+						<a href="">Ver este proyecto</a>
+						<a href="">Ir al portafolio</a>
+					</div>
+				</div>
+			</div>
+			<div class="trabajos">
+
 				<img src="assets/img/images/02.jpg" alt="Imagen portafilio 02">
-			</a>
-			<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing
-				ornare
-				amet.</p>
-			<button>Ver este proyecto</button>
-			<button>Ir al portafolio</button>
-		</div>
-		<div>
-			<a href="#">
+				<div class="trabajo-contenido">
+					<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
+						adipiscing
+						ornare
+						amet.</p>
+					<ul class="trabajos-icon">
+						<li><i class="fab fa-wordpress"></i>WordPress</li>
+						<li><i class="fab fa-js-square"></i>JavaScript</li>
+						<li><i class="fab fa-html5"></i>HTML5</li>
+						<li><i class="fab fa-css3-alt"></i>CSS3</li>
+					</ul>
+					<div>
+						<a href="">Ver este proyecto</a>
+						<a href="">Ir al portafolio</a>
+					</div>
+				</div>
+			</div>
+			<div class="trabajos">
+
 				<img src="assets/img/images/03.jpg" alt="Imagen portafilio 03">
-			</a>
-			<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing
-				ornare
-				amet.</p>
-			<button>Ver este proyecto</button>
-			<button>Ir al portafolio</button>
-		</div>
-		<div>
-			<a href="#">
+				<div class="trabajo-contenido">
+					<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer
+						adipiscing
+						ornare
+						amet.</p>
+					<ul class="trabajos-icon">
+						<li><i class="fab fa-wordpress"></i>WordPress</li>
+						<li><i class="fab fa-js-square"></i>JavaScript</li>
+						<li><i class="fab fa-html5"></i>HTML5</li>
+						<li><i class="fab fa-css3-alt"></i>CSS3</li>
+					</ul>
+					<div>
+						<a href="">Ver este proyecto</a>
+						<a href="">Ir al portafolio</a>
+					</div>
+				</div>
+			</div>
+			<div class="trabajos">
+
 				<img src="assets/img/images/04.jpg" alt="Imagen portafilio 04">
-			</a>
-			<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing
-				ornare
-				amet.</p>
-			<button>Ver este proyecto</button>
-			<button>Ir al portafolio</button>
-		</div>
-	</section>
+				<div class="trabajo-contenido">
+					<p>Web coportiva maquetada con: </p>
+					<ul class="trabajos-icon">
+						<li><i class="fab fa-wordpress"></i>WordPress</li>
+						<li><i class="fab fa-js-square"></i>JavaScript</li>
+						<li><i class="fab fa-html5"></i>HTML5</li>
+						<li><i class="fab fa-css3-alt"></i>CSS3</li>
+					</ul>
+					<div>
+						<a href="">Ver este proyecto</a>
+						<a href="">Ir al portafolio</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
 	<!-- Testimoniales  -->
-	<blockquote>
-		<h2>Testimoniales</h2>
+	<blockquote class="contenedor">
+		
+		<h2 class="c-letra text-center">Testimoniales</h2>
+		<div class="slider"></div>
 		<div>
 			<p>Quisque quam ligula, porta a lacus eu, sagittis laoreet lorem. Vestibulum iaculis mollis lacus in
 				volutpat</p>
@@ -165,6 +208,7 @@
 				volutpat</p>
 			<h4>Pedro Perez</h4>
 			<img src="assets/img/images/test03.jpg" alt="Testimonial 03">
+		</div>
 		</div>
 	</blockquote>
 	<!-- footer  -->
