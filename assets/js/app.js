@@ -4,3 +4,9 @@ function blinksNone() {
 	blinks.classList.toggle("blinks")
 }
 setInterval(blinksNone, 500);
+
+// funcion para los botones del slider
+
+function sliderHome() {
+	const slider = document.querySelector('slider');
+}
