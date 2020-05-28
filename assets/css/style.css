@@ -319,6 +319,23 @@ body {
 	margin: 10rem auto;
 }
 
+.blockquote h2::before {
+	content: "\201C";
+	position: absolute;
+	left: 10%;
+	font-size: 30rem;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgba(255, 255, 255, 0.2)
+}
+
+.slider-off {
+	display: none;
+}
+
+.slider-in {
+	/* pendiente para hacer el slider  */
+}
+
 .slider-in q {
 	font-size: 2rem;
 	font-style: italic;
@@ -353,8 +370,13 @@ body {
 	margin: 5rem 0;
 }
 
-.slider {
+.slider-control {
 	justify-content: center;
+
+}
+
+.slider-control a {
+	color: rgba(0, 0, 0, 0);
 }
 
 .btn-slider {
