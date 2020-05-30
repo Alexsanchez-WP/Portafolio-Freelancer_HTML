@@ -4,13 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta http-equiv="X-UA-Co	mpatible" content="ie=edge" />
 	<meta http-equiv="X-UA-Compatible" content="IE=7" />
 	<title>Alexander-WP</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
 	<link href="/assets/css/icon/fontawesome/all.css" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/normalize.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/meter.css">
 </head>
 
 <body>
@@ -34,76 +35,112 @@
 		</section>
 	</header>
 	<!-- fin header  -->
-	<main class="container">
+	<main class="container profile">
 		<div class="flex">
-			<div>
+			<div class="img-profile">
 				<img src="assets/img/joseph-pearson-827XUhVSp8M-unsplash.png" alt="Foto de Alexander WP ">
 			</div>
-			<aside>
+			<aside class="content-profile">
+				<h2 class="text-center color-letter">Skills</h2>
 				<div>
-					<h3>HTML<span class="texto-resaltado">5</h3>
-					<ul>
-						<li>HTML 5</li>
+					<h3><i class="fas fa-angle-double-up fa-rotate-180"></i>HTML5</h3>
+					<ul class="no-meter">
+						<li class="flex-end">
+							<p><i class="fab fa-html5"></i>HTML 5</p>
+							<div class="meter"></div>
+						</li>
 					</ul>
 				</div>
 				<div>
-					<h3>CSS<span class="texto-resaltado">3</span>3</h3>
-					<ul>
-						<li>
-							<label for="css">CSS</label>
-							<meter id="css" value="80" min="0" max="100">80%</meter>
+					<h3><i class="fas fa-angle-double-up fa-rotate-180"></i>CSS<span class="texto-resaltado">3</span>3
+					</h3>
+					<ul class="no-meter">
+						<li class="flex-end">
+							<p><i class="fab fa-css3-alt"></i>CSS</p>
+							<div class="meter"></div>
 						</li>
-						<li>
-							<label for="sass">SASS</label>
-							<meter id="sass" value="20" min="0" max="100">20%</meter>
+						<li class="flex-end">
+							<p><i class="fas fa-boxes"></i>FlexBox</p>
+							<div class="meter"></div>
 						</li>
-						<li>
-							<label for="bootstrap">Bootstrap</label>
+						<li class="flex-end">
+							<p><i class="fas fa-grip-horizontal"></i>CSS Grid</p>
+							<div class="meter"></div>
+						</li>
+						<!-- <li class="flex-end">
+							<label for="bootstrap"><i class="fab fa-bootstrap"></i>Bootstrap</label>
 							<meter id="bootstrap" value="20" min="0" max="100">20%</meter>
-						<li>
-							<label for="flexbox">FlexBox</label>
-							<meter id="flexbox" value="20" min="0" max="100">20%</meter>
-						</li>
-						<li>
-							<label for="cssgrid">CSS Grid</label>
-							<meter id="cssgrid" value="20" min="0" max="100">20%</meter>
-						</li>
-						<li><label for="materialize">Materialize</label>
+						</li> -->
+						<!-- <li class="flex-end">
+							<label for="bulma"><i class="fab fa-bootstrap"></i>Bulma</label>
+							<meter id="bulm" value="20" min="0" max="100">20%</meter>
+						</li> -->
+						<!-- <li class="flex-end"><label for="materialize">Materialize</label>
 							<meter id="materialize" value="20" min="0" max="100">20%</meter>
+						</li> -->
+						<!-- <li class="flex-end">
+							<label for="sass"><i class="fab fa-sass"></i>SASS</label>
+							<meter id="sass" value="20" min="0" max="100">20%</meter>
+						</li> -->
+					</ul>
+				</div>
+				<div>
+					<h3><i class="fas fa-angle-double-up fa-rotate-180"></i>JavaScript</span></h3>
+					<ul class="no-meter">
+						<li class="flex-end">
+							<p class="flex-end"><i class="fab fa-js-square"></i>JavaScript</p>
+							<div class="meter"></div>
+						</li>
+						<li class="flex-end">
+							<p><i class="fas fa-terminal"></i>ES6</p>
+							<div class="meter"></div>
+						</li>
+						<!-- <li class="flex-end">JQuery</li>
+						<li class="flex-end">React</li>
+						<li class="flex-end">VueJS</li>
+						<li class="flex-end">Anular</li> -->
+					</ul>
+				</div>
+				<div>
+					<h3><i class="fas fa-angle-double-up fa-rotate-180"></i>WordPress</span></h3>
+					<ul class="no-meter">
+						<li class="flex-end">
+							<p><i class="fab fa-wordpress"></i>Diseño de temas</p>
+							<div class="meter"></div>
+						</li>
+						<li class="flex-end">
+							<p><i class="fas fa-cubes"></i>Bloques Gutenberg</p>
+							<div class="meter"></div>
+						</li>
+						<li class="flex-end"></li>
+						<li class="flex-end">
+							<p><i class="fas fa-puzzle-piece"></i>Creación de Plugins</p>
+							<div class="meter"></div>
+						</li>
+						<li class="flex-end">
+							<p><i class="fas fa-swatchbook"></i>Creación de Widgets</p>
+							<div class="meter">20</div>
 						</li>
 					</ul>
 				</div>
 				<div>
-					<h3>Java<span class="texto-resaltado">Script</span></h3>
-					<ul>
-						<li>JQuery</li>
-						<li>Anular</li>
-						<li>React</li>
-						<li>ES6</li>
-						<li>VueJS</li>
+					<h3><i class="fas fa-angle-double-up fa-rotate-180"></i>Idiomas</h3>
+					<ul class="no-meter">
+						<li class="flex-end">
+							<p><i class="fas fa-language"></i>Español (Nativo)</p>
+							<div class="meter"></div>
+						</li>
+						<li class="flex-end">
+							<p><i class="fas fa-language"></i></i>Ingles</p>
+							<div class="meter"></div>
+						</li>
 					</ul>
 				</div>
-				<div>
-					<h3>Word<span class="texto-resaltado">Press</span></h3>
-					<ul>
-						<li>Diseño de temas</li>
-						<li>Creación de bloque en Gutenberg</li>
-						<li>Creación de Plugins</li>
-						<li>Creación de Widgets</li>
-					</ul>
-				</div>
-				<div>
-					<h3>Idiomas</h3>
-					<ul>
-						<li>Español <span>Nativo</span></li>
-					</ul>
-				</div>
-				<sub>*Cada mes actualizo el estado en base de lo que voy aprendiendo y sobre aplicando en los
-					proyectos</sub>
+				<p><sub>*Cada mes actualizo el estado en base de lo que voy aprendiendo y sobre aplicando en los
+						proyectos</sub></p>
 			</aside>
 		</div>
 	</main>
-
 	<!-- footer  -->
 	<footer class="footer color-letter">
 		<div class="footer-div container">
