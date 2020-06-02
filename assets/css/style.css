@@ -543,3 +543,24 @@ body {
 	color: var(--blanco);
 	font-weight: 700;
 }
+
+/* pagina de perfil  */
+
+.profile {
+	margin-top: 10rem;
+}
+
+.profile .flex-up {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile .img-profile {
+
+	flex: 0 0 calc(30%);
+}
+
+.content-profile {
+	flex: 0 0 calc(70% - 2rem);
+	color: var(--blanco);
+}

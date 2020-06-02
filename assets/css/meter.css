@@ -1,20 +1,45 @@
-/* pagina de perfil  */
+:root {
+	--blanco: #ffffff;
+	--azulClaro: #79c8c7;
+	--backgroundBody: #014e56;
+	--AzulOscuro: #32828c;
+	--backgroundDos: #2c6269;
 
-.profile {
-	margin-top: 10rem;
 }
 
-.profile .img-profile {
+/* animacion de los atribustos para los skills */
 
-	flex: 0 0 calc(50%);
+.skills {
+	animation: skills 1s infinite;
 }
 
-.content-profile {
-	flex: 0 0 calc(50% - 2rem);
-	color: var(--blanco);
+.skills:hover {
+	cursor: pointer;
 }
+
+/* Animacion en los skill de la pagina perfil  */
 
 .meter {
+	animation-duration: 3s;
+	height: 2rem;
+	border-radius: .5rem;
+	color: transparent;
+	text-align: center;
+	position: relative;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2d9e97+1,49b996+50,49b996+51,79d28c+100 */
+	background: #2d9e97;
+	/* Old browsers */
+	background: -moz-linear-gradient(top, #2d9e97 1%, #49b996 50%, #49b996 51%, #79d28c 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #2d9e97 1%, #49b996 50%, #49b996 51%, #79d28c 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #2d9e97 1%, #49b996 50%, #49b996 51%, #79d28c 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d9e97', endColorstr='#79d28c', GradientType=0);
+	/* IE6-9 */
+}
+
+.meter-content {
 	background-color: lightgray;
 	width: 60%;
 	height: 2rem;
@@ -25,116 +50,726 @@
 }
 
 .no-meter {
-	opacity: 1;
-	position: relative;
-}
-
-/* .no-meter {
 	position: absolute;
 	opacity: 0;
-} */
-
-.fa-rotate-180 {
-	transition: color 2s;
 }
 
-.b1,
-.b2,
-.b3,
-.b4,
-.b5,
-.b6,
-.b7,
-.b8,
-.b9,
-.b10,
-.b11,
-.b12,
-.b13,
-.b14,
-.b15,
-.b16,
-.b17,
-.b18,
-.b19,
-.b20,
-.b21,
-.b22,
-.b23,
-.b24,
-.b25,
-.b26,
-.b27,
-.b28,
-.b29,
-.b30,
-.b31,
-.b32,
-.b33,
-.b34,
-.b35,
-.b36,
-.b37,
-.b38,
-.b39,
-.b40,
-.b41,
-.b42,
-.b43,
-.b44,
-.b45,
-.b46,
-.b47,
-.b48,
-.b49,
-.b50,
-.b51,
-.b52,
-.b53,
-.b54,
-.b55,
-.b56,
-.b57,
-.b58,
-.b59,
-.b60,
-.b61,
-.b62,
-.b63,
-.b64,
-.b65,
-.b66,
-.b67,
-.b68,
-.b69,
-.b70,
-.b71,
-.b72,
-.b73,
-.b74,
-.b75,
-.b76,
-.b77,
-.b78,
-.b79,
-.b80,
-.b81,
-.b82,
-.b83,
-.b84,
-.b85,
-.b86,
-.b87,
-.b88,
-.b89,
-.b90,
-.b91,
-.b92,
-.b93,
-.b94,
-.b95,
-.b96,
-.b97,
-.b98,
-.b99,
-.b100 {}
+.yes-meter {
+	position: relative;
+	opacity: 1;
+	transition: all 1s;
+}
+
+.b1 {
+	width: 1%;
+}
+
+.b2 {
+	width: 2%;
+}
+
+.b3 {
+	width: 3%;
+}
+
+.b4 {
+	width: 4%;
+}
+
+.b5 {
+	width: 5%;
+	animation-name: meter5;
+}
+
+.b6 {
+	width: 6%;
+}
+
+.b7 {
+	width: 7%;
+}
+
+.b8 {
+	width: 8%;
+}
+
+.b9 {
+	width: 9%;
+}
+
+.b10 {
+	width: 10%;
+	animation-name: meter10;
+}
+
+.b11 {
+	width: 11%;
+}
+
+.b12 {
+	width: 12%;
+}
+
+.b13 {
+	width: 13%;
+}
+
+.b14 {
+	width: 14%;
+}
+
+.b15 {
+	width: 15%;
+	animation-name: meter15;
+}
+
+.b16 {
+	width: 16%;
+}
+
+.b17 {
+	width: 17%;
+}
+
+.b18 {
+	width: 18%;
+}
+
+.b19 {
+	width: 19%;
+}
+
+.b20 {
+	width: 20%;
+	animation-name: meter20;
+}
+
+.b21 {
+	width: 21%;
+}
+
+.b22 {
+	width: 22%;
+}
+
+.b23 {
+	width: 23%;
+}
+
+.b24 {
+	width: 24%;
+}
+
+.b25 {
+	width: 25%;
+	animation-name: meter25;
+}
+
+.b26 {
+	width: 26%;
+}
+
+.b27 {
+	width: 27%;
+}
+
+.b28 {
+	width: 28%;
+}
+
+.b29 {
+	width: 29%;
+}
+
+.b30 {
+	width: 30%;
+	animation-name: meter30;
+}
+
+.b31 {
+	width: 31%;
+}
+
+.b32 {
+	width: 32%;
+}
+
+.b33 {
+	width: 33%;
+}
+
+.b34 {
+	width: 34%;
+}
+
+.b35 {
+	width: 35%;
+	animation-name: meter35;
+}
+
+.b36 {
+	width: 36%;
+}
+
+.b37 {
+	width: 37%;
+}
+
+.b38 {
+	width: 38%;
+}
+
+.b39 {
+	width: 39%;
+}
+
+.b40 {
+	width: 40%;
+	animation-name: meter40;
+}
+
+.b41 {
+	width: 41%;
+}
+
+.b42 {
+	width: 42%;
+}
+
+.b43 {
+	width: 43%;
+}
+
+.b44 {
+	width: 44%;
+}
+
+.b45 {
+	width: 45%;
+	animation-name: meter45;
+}
+
+.b46 {
+	width: 46%;
+}
+
+.b47 {
+	width: 47%;
+}
+
+.b48 {
+	width: 48%;
+}
+
+.b49 {
+	width: 49%;
+}
+
+.b50 {
+	width: 50%;
+	animation-name: meter50;
+}
+
+.b51 {
+	width: 51%;
+}
+
+.b52 {
+	width: 52%;
+}
+
+.b53 {
+	width: 53%;
+}
+
+.b54 {
+	width: 54%;
+}
+
+.b55 {
+	width: 55%;
+	animation-name: meter55;
+}
+
+.b56 {
+	width: 56%;
+}
+
+.b57 {
+	width: 57%;
+}
+
+.b58 {
+	width: 58%;
+}
+
+.b59 {
+	width: 59%;
+}
+
+.b60 {
+	width: 60%;
+	animation-name: meter60;
+}
+
+.b61 {
+	width: 61%;
+}
+
+.b62 {
+	width: 62%;
+}
+
+.b63 {
+	width: 63%;
+}
+
+.b64 {
+	width: 64%;
+}
+
+.b65 {
+	width: 65%;
+	animation-name: meter65;
+}
+
+.b66 {
+	width: 66%;
+}
+
+.b67 {
+	width: 67%;
+}
+
+.b68 {
+	width: 68%;
+}
+
+.b69 {
+	width: 69%;
+}
+
+.b70 {
+	width: 70%;
+	animation-name: meter70;
+}
+
+.b71 {
+	width: 71%;
+}
+
+.b72 {
+	width: 72%;
+}
+
+.b73 {
+	width: 73%;
+}
+
+.b74 {
+	width: 74%;
+}
+
+.b75 {
+	width: 75%;
+	animation-name: meter75;
+}
+
+.b76 {
+	width: 76%;
+}
+
+.b77 {
+	width: 77%;
+}
+
+.b78 {
+	width: 78%;
+}
+
+.b79 {
+	width: 79%;
+}
+
+.b80 {
+	width: 80%;
+	animation-name: meter80;
+}
+
+.b81 {
+	width: 81%;
+}
+
+.b82 {
+	width: 82%;
+}
+
+.b83 {
+	width: 83%;
+}
+
+.b84 {
+	width: 84%;
+}
+
+.b85 {
+	width: 85%;
+	animation-name: meter85;
+}
+
+.b86 {
+	width: 86%;
+}
+
+.b87 {
+	width: 87%;
+}
+
+.b88 {
+	width: 88%;
+}
+
+.b89 {
+	width: 89%;
+}
+
+.b90 {
+	width: 90%;
+	animation-name: meter90;
+}
+
+.b91 {
+	width: 91%;
+}
+
+.b92 {
+	width: 92%;
+}
+
+.b93 {
+	width: 93%;
+}
+
+.b94 {
+	width: 94%;
+}
+
+.b95 {
+	width: 95%;
+	animation-name: meter95;
+}
+
+.b96 {
+	width: 96%;
+}
+
+.b97 {
+	width: 97%;
+}
+
+.b98 {
+	width: 98%;
+}
+
+.b99 {
+	width: 99%;
+}
+
+.b100 {
+	width: 100%;
+	animation-name: meter100;
+}
+
+@keyframes meter5 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 5%;
+	}
+}
+
+@keyframes meter10 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 10%;
+	}
+}
+
+@keyframes meter15 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 15%;
+	}
+}
+
+@keyframes meter20 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 20%;
+	}
+}
+
+@keyframes meter25 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 25%;
+	}
+}
+
+@keyframes meter30 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 30%;
+	}
+}
+
+@keyframes meter35 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 35%;
+	}
+}
+
+@keyframes meter40 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 40%;
+	}
+}
+
+@keyframes meter45 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 45%;
+	}
+}
+
+@keyframes meter50 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 50%;
+	}
+}
+
+@keyframes meter55 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 55%;
+	}
+}
+
+@keyframes meter60 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 60%;
+	}
+}
+
+@keyframes meter65 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 65%;
+	}
+}
+
+@keyframes meter70 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 70%;
+	}
+}
+
+@keyframes meter75 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 75%;
+	}
+}
+
+@keyframes meter80 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 80%;
+	}
+}
+
+@keyframes meter85 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 85%;
+	}
+}
+
+@keyframes meter90 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes meter95 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 95%;
+	}
+}
+
+@keyframes meter100 {
+	0% {
+		width: 0;
+	}
+
+	50% {
+		width: 100%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes skills {
+	0% {
+		color: var(--blanco);
+	}
+
+	50% {
+		color: var(--azulClaro);
+	}
+
+	100% {
+		color: var(--blanco);
+	}
+}
