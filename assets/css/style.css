@@ -63,6 +63,12 @@ i {
 	margin-right: 1rem
 }
 
+button,
+input,
+textarea {
+	border-style: none;
+}
+
 /* iconos */
 
 body {
@@ -107,6 +113,14 @@ body {
 	color: var(--blanco);
 }
 
+.border-light {
+	border-bottom: 1px solid var(--azulClaro) !important;
+}
+
+.border-light:last-of-type {
+	border-bottom: none !important;
+}
+
 .btn-dark {
 	color: var(--blanco);
 	padding: 1em;
@@ -118,7 +132,14 @@ body {
 
 .btn-dark:hover {
 	background-color: var(--AzulOscuro);
+	color: var(--azulClaro);
 }
+
+.content-block {
+	margin-top: 15rem;
+	margin-bottom: 15rem;
+}
+
 
 /* header  */
 .cover {
@@ -557,10 +578,104 @@ body {
 
 .profile .img-profile {
 
-	flex: 0 0 calc(30%);
+	flex: 0 0 calc(40%);
 }
 
 .content-profile {
-	flex: 0 0 calc(70% - 2rem);
+	flex: 0 0 calc(60% - 5rem);
 	color: var(--blanco);
+}
+
+/* pagina de blog  */
+
+.section-blog {
+	flex: 0 0 calc(60% - 4rem);
+}
+
+.aside-blog {
+	flex: 0 0 calc(40%);
+}
+
+.aside-blog h3 {
+	margin-top: 0;
+}
+
+.aside-blog .form-jobs {
+	padding-bottom: 5rem;
+}
+
+.img-post {
+	flex: 0 0 calc(40% - 2rem);
+}
+
+.info-post {
+	flex: 0 0 calc(60%);
+}
+
+.info-post h2 {
+	margin-top: 0;
+}
+
+.container-blog {
+	margin-top: 15rem;
+	align-items: flex-start;
+}
+
+.section-blog .div-section-blog {
+	align-items: flex-start;
+	border-bottom: 1px solid var(--azulClaro);
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.section-blog .div-section-blog:first-child {
+	padding-top: 0;
+}
+
+.section-blog .div-section-blog:last-child {
+	border-bottom: none;
+}
+
+/* formulario de contacto  */
+
+.form-contact {
+	margin-top: 10rem;
+}
+
+.input-contact {
+	margin: 3rem auto;
+	color: var(--blanco);
+	font-size: 1.5rem;
+}
+
+.input-contact input {
+	width: 60%;
+	border-radius: 0.5rem;
+}
+
+.input-contact textarea {
+	width: 60%;
+	height: 15rem;
+	border-radius: 0.5rem;
+}
+
+.input-contact button {
+	width: 100%;
+}
+
+.main-contact {
+	flex: 0 0 calc(70% - 5rem);
+}
+
+.main-contact sub {
+	font-size: 1rem;
+}
+
+.address-contact {
+	flex: 0 0 calc(30%);
+	font-size: 1.8rem;
+}
+
+.address-contact a {
+	font-size: 2rem;
 }
