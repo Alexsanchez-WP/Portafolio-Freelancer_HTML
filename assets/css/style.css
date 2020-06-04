@@ -127,12 +127,12 @@ body {
 	background-color: var(--backgroundBody);
 	font-weight: 700;
 	border-radius: 0.2rem;
-	transition: background 0.5s;
+	transition: all 1s;
 }
 
 .btn-dark:hover {
-	background-color: var(--AzulOscuro);
-	color: var(--azulClaro);
+	background-color: var(--blanco);
+	color: var(--AzulOscuro);
 }
 
 .content-block {
@@ -192,6 +192,7 @@ body {
 	color: var(--blanco);
 	font-weight: 700;
 	font-size: 1.8rem;
+	transition: color 0.5s;
 }
 
 .nav li a:hover {
@@ -581,6 +582,10 @@ body {
 	flex: 0 0 calc(40%);
 }
 
+.img-profile img {
+	width: 70%;
+}
+
 .content-profile {
 	flex: 0 0 calc(60% - 5rem);
 	color: var(--blanco);
@@ -651,6 +656,7 @@ body {
 .input-contact input {
 	width: 60%;
 	border-radius: 0.5rem;
+	height: 3rem;
 }
 
 .input-contact textarea {
@@ -678,4 +684,19 @@ body {
 
 .address-contact a {
 	font-size: 2rem;
+}
+
+.address-social {
+	width: 100%;
+	margin-top: 5rem;
+}
+
+.address-social i {
+	font-size: 3.5rem;
+	color: var(--blanco);
+	transition: color 0.5s;
+}
+
+.address-social i:hover {
+	color: var(--azulClaro);
 }
