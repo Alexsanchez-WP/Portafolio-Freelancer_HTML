@@ -41,12 +41,17 @@
 
 .meter-content {
 	background-color: lightgray;
-	width: 60%;
 	height: 2rem;
 	border-radius: .5rem;
 	margin-left: 2rem;
 	color: transparent;
 	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.meter-content{
+		width: 60%;
+	}
 }
 
 .no-meter {
