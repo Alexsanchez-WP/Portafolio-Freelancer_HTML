@@ -419,14 +419,12 @@ body {
 .attributes p {
   flex: 0 0 calc(85%);
   margin: 0 !important;
-
-  @media(min-width: 768px) {
-    .jobs-container {
-      padding: 0;
-    }
-  }
-
   line-height: 1.5;
+}
+@media(min-width: 768px) {
+  .jobs-container {
+    padding: 0;
+  }
 }
 
 /* jobs*/
