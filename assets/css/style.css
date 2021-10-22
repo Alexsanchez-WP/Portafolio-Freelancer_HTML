@@ -10,7 +10,9 @@
 }
 
 /* color:#2C6269; */
+
 /* Azul claro #25A5D5  */
+
 html {
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
@@ -18,15 +20,11 @@ html {
 	/* Now 10px = 1rem! */
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	box-sizing: inherit;
 }
 
-ul,
-li,
-a {
+ul, li, a {
 	list-style: none;
 	text-decoration: none;
 	margin: 0;
@@ -60,14 +58,12 @@ h4 {
 		font-size: 4rem;
 		font-weight: 900;
 	}
-
 	h2 {
 		font-size: 3.6rem;
 	}
 }
 
-a,
-p {
+a, p {
 	font-size: 1.4rem;
 }
 
@@ -75,19 +71,19 @@ i {
 	margin-right: 1rem
 }
 
-button,
-input,
-textarea {
+button, input, textarea {
 	border-style: none;
 }
 
 /* iconos */
+
 body {
 	background-color: var(--AzulOscuro);
 	width: 100%;
 }
 
 /* Utiliades  */
+
 .container {
 	max-width: 120rem;
 	width: 80%;
@@ -104,7 +100,6 @@ body {
 		align-items: center;
 		justify-content: space-between;
 	}
-
 	.flex-end {
 		display: flex;
 		align-items: center;
@@ -122,6 +117,10 @@ body {
 
 .color-letter {
 	color: var(--blanco);
+}
+
+.color-letter span {
+	color: var(--backgroundDos)
 }
 
 .border-light {
@@ -162,6 +161,7 @@ body {
 }
 
 /* header  */
+
 .cover {
 	overflow: hidden;
 }
@@ -304,6 +304,7 @@ body {
 }
 
 /* Centro de header  */
+
 .header-center {
 	position: absolute;
 	top: 10%;
@@ -315,6 +316,7 @@ body {
 @media(min-width: 640px) {
 	.header-center {
 		top: 20%;
+		max-width: 45%;
 	}
 }
 
@@ -337,6 +339,7 @@ body {
 }
 
 /* attributes del profile */
+
 .profile {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -423,6 +426,7 @@ body {
 }
 
 /* jobs*/
+
 .jobs-container {
 	background-color: var(--backgroundDos);
 	width: 100%;
@@ -449,7 +453,7 @@ body {
 
 @media(min-width: 1024px) {
 	.section-jobs {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
@@ -528,13 +532,13 @@ body {
 	.job-container a {
 		display: block;
 	}
-
 	.jobs-icon {
 		margin: 1rem 0;
 	}
 }
 
 /* testimoniales  */
+
 .blockquote {
 	margin: 5rem auto;
 	overflow: hidden;
@@ -609,6 +613,7 @@ body {
 }
 
 /* boton para slider  */
+
 .radio-select {
 	margin: 5rem 0;
 }
@@ -636,6 +641,7 @@ body {
 }
 
 /* footer  */
+
 .footer {
 	background-color: var(--grisNav);
 }
@@ -717,6 +723,7 @@ body {
 }
 
 /* Pagina de portafolio  */
+
 .star-portfilio {
 	color: #F9F871;
 	font-size: 2rem;
@@ -797,6 +804,7 @@ body {
 }
 
 /* pagina de perfil  */
+
 .profile-page {
 	margin-top: 10rem;
 	text-align: center;
@@ -827,6 +835,7 @@ body {
 }
 
 /* pagina de blog  */
+
 .section-blog {
 	flex: 0 0 calc(60% - 4rem);
 }
@@ -882,6 +891,7 @@ body {
 }
 
 /* formulario de contacto  */
+
 .form-contact {
 	margin-top: 10rem;
 }
